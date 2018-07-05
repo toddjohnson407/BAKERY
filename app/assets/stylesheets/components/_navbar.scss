@@ -1,77 +1,171 @@
-/* Main navbar */
-.navbar-wagon {
-  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
-  background: white;
-  transition: all 0.3s ease;
-  height: 70px;
-  padding: 0px 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+* {
+  margin : 0;
+  padding : 0;
+}
+body {
+  font-family : tahoma,arial;
 }
 
-/* Logo */
-.navbar-wagon-brand img {
-  height: 50px;
+.categcolor {
+  color: black;
 }
 
-/* User Avatar */
-.navbar-wagon .avatar {
-  height: 35px;
-  width: 35px;
-  border-radius: 50%;
+.scroll-to-top {
+  font-size : 20px;
+  background-color : #333;
+  color : #fff;
+  display : block;
+  padding : 5px;
+  position : fixed;
+  bottom : 10px;
+  right : 10px;
+  width : 70px;
+  height : 40px;
+  display : none;
+  cursor : pointer;
 }
 
-/* Right section */
-.navbar-wagon-right {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.navbar {
+  color: black;
+  list-style : none;
+  margin : 0;
+  padding : 15px;
+  background-color : white;
+  text-align : center;
+  position : fixed;
+  top : 0;
+  left : 0;
+  width : 100%;
+}
+.navbar li {
+  display : inline-block;
+  padding : 10px;
+}
+.navbar li a {
+  text-decoration : none;
+   color: black;
+}
+.navbar li a.active {
+  color : #FC0D1B;
 }
 
-/* Basic navbar item */
-.navbar-wagon-item {
-  cursor: pointer;
-  padding: 0 20px;
+.block {
+  height:1200px;
+  text-align : center;
+  margin-bottom : 20px;
+  padding : 60px 0;
 }
 
-/* Navbar link */
-.navbar-wagon-link {
-  color: #616668;
-  font-size: 14px;
+#Home {
+  background-color: #FC0D1B;
 }
-.navbar-wagon-link:hover {
-  color: #da552f;
-  text-decoration: none;
-}
-
-/* Dropdown menu */
-.navbar-wagon-dropdown-menu {
-  margin-top: 15px;
-  box-shadow: 1px 1px 4px #E6E6E6;
-  border-color: #E6E6E6;
-}
-.navbar-wagon-dropdown-menu li > a {
-  transition: color 0.3s ease;
-  font-weight: lighter !important;
-  color: #999999 !important;
-  font-size: 15px !important;
-  line-height: 22px !important;
-  padding: 10px 20px;
-}
-.navbar-wagon-dropdown-menu li > a:hover {
-  background: transparent !important;
-  color: black !important;
-}
-.navbar-wagon-dropdown-menu:before {
-  content: ' ';
-  height: 10px;
-  width: 10px;
-  position: absolute;
-  right: 10px;
-  top: -6px;
+#About-us {
   background-color: white;
-  transform: rotate(45deg);
-  border-left: 1px solid #E6E6E6;
-  border-top: 1px solid #E6E6E6;
 }
+#Services {
+  background-color: #FC0D1B;
+}
+#Solutions {
+  background-color: white;
+}
+#products {
+  background-color: #FC0D1B;
+}
+#Contact-us {
+  background-color: white;
+}
+h2 {
+  padding: 20px;
+  color: black;
+}
+/* start popup */
+.popup {
+  position : fixed;
+  top : 0;
+  left : 0;
+  width : 100%;
+  height : 100%;
+  z-index : 9999;
+  background-color : rgba(187,187,187,0.8);
+  display : none;
+}
+.popup .inner {
+  background-color : #fff;
+  border : 1px solid #ccc;
+  padding : 20px;
+  position : fixed;
+  width : 300px;
+  height : 250px;
+  left : 50%;
+  top : 50%;
+  margin-left : -150px;
+  margin-top : -152px;
+  border-radius : 5px;
+}
+.popup .inner h3 {
+  color : #777;
+  margin : 0 0 10px;
+  border-bottom : 1px solid #eee;
+  padding-bottom : 10px;
+}
+.popup .inner p {
+  color : #aaa;
+  line-height : 1.6;
+}
+.popup .inner button {
+  position : absolute;
+  bottom : 10px;
+  right : 10px;
+  padding : 2px 8px;
+  background-color : #eee;
+  border : 1px solid #ccc;
+  border-radius : 4px;
+  cursor : pointer;
+}
+.show-popup {
+  cursor : pointer;
+  display : inline-block;
+  text-align : center;
+  margin-top : 10px;
+  margin-left : 10px;
+  background-color : #fff;
+  width : 140px;
+  padding : 10px;
+  border-radius : 10px;
+  font-weight : bold;
+  color : #928440;
+}
+/* end popup */
+/* start buttons with effects */
+.buttons-effect {
+  cursor : pointer;
+  display : inline-block;
+  text-align : center;
+  margin-top : 10px;
+  margin-left : 10px;
+  background-color : #928440;
+  width : 140px;
+  padding : 10px;
+  border-radius : 10px;
+  font-weight : bold;
+  color : #fff;
+  border : none;
+  position : relative;
+  overflow : hidden;
+}
+.buttons-effect.from-left span:first-child {
+  position : absolute;
+  left : 0;
+  top : 0;
+  width : 0;
+  height : 100%;
+  display : block;
+  background-color : #FD7568;
+  z-index : 1;
+}
+.buttons-effect.from-left span:last-child {
+  position : relative;
+  z-index : 2;
+}
+
+/* end buttons with effects */
