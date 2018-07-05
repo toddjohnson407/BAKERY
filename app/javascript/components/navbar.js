@@ -1,6 +1,5 @@
 
 function navbar() {
-  console.log("test");
   $(function(){
     'use strict';
 

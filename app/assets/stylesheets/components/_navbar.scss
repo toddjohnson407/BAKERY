@@ -43,17 +43,32 @@ body {
 }
 .navbar li a {
   text-decoration : none;
-   color: black;
+  color: black;
 }
 .navbar li a.active {
-  color : #FC0D1B;
+  color: #FC0D1B;
+}
+
+.linked {
+  color: black;
+  display : inline-block;
+  padding : 10px;
+}
+
+.linked:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.linked:active {
+  color: #FC0D1B;
 }
 
 .block {
-  height:1200px;
+  height: 1200px;
   text-align : center;
   margin-bottom : 20px;
-  padding : 60px 0;
+  padding : 30px 0;
 }
 
 #Home {
@@ -62,18 +77,7 @@ body {
 #About-us {
   background-color: white;
 }
-#Services {
-  background-color: #FC0D1B;
-}
-#Solutions {
-  background-color: white;
-}
-#products {
-  background-color: #FC0D1B;
-}
-#Contact-us {
-  background-color: white;
-}
+
 h2 {
   padding: 20px;
   color: black;
@@ -133,7 +137,7 @@ h2 {
   padding : 10px;
   border-radius : 10px;
   font-weight : bold;
-  color : #928440;
+  color : #FC0D1B;
 }
 /* end popup */
 /* start buttons with effects */
@@ -143,12 +147,12 @@ h2 {
   text-align : center;
   margin-top : 10px;
   margin-left : 10px;
-  background-color : #928440;
+  background-color : white;
   width : 140px;
   padding : 10px;
   border-radius : 10px;
   font-weight : bold;
-  color : #fff;
+  color : #FC0D1B;
   border : none;
   position : relative;
   overflow : hidden;

@@ -1,54 +1,10 @@
 
 <ul class="navbar">
-  <li><a href="#" data-scroll="Home">Home</a></li>
+  <%= link_to "Home", root_path, class: "linked", :"data-scroll" => "Home"%>
+  <%= link_to "Our Cookies", cookies_path, class: "linked" %>
+  <%= link_to "Place An Order", root_path, class: "linked" %>
   <li><a href="#" data-scroll="About-us">About Us</a></li>
-  <li><a href="#" data-scroll="Services">Our Cookies</a></li>
-  <li><a href="#" data-scroll="Services">Place an Order</a></li>
 </ul>
-
-<!-- start sections -->
-<div id="Home" class="block">
-  <h2>Home</h2>
-  <!-- start popup -->
-  <div class="popups">
-    <span class="show-popup" data-popup="first-popup">show 1st                popup</span>
-    <span class="show-popup" data-popup="second-popup">show 2nd                popup</span>
-  </div>
-  <!-- end popup -->
-  <!-- start buttons with effects -->
-  <div class="buttons-effects">
-    <button class="buttons-effect from-left">
-      <span></span>
-      <span>Download</span>
-    </button>
-  </div>
-  <!-- end buttons with effects -->
-</div>
-
-<div id="About-us" class="block">
-  <h2>About us</h2>
-</div>
-
-<!-- end sections -->
-<!-- start scrolltotop -->
-<button class="scroll-to-top">up</button>
-<!-- end scrolltotop -->
-<!-- start popup -->
-<div class="popup first-popup">
-  <div class="inner">
-    <h3>this is a 1st popup </h3>
-    <p>this is a popup should be apear when you do something</p>
-    <button class="close">close</button>
-  </div>
-</div>
-<div class="popup second-popup">
-  <div class="inner">
-    <h3>this is a 2nd popup </h3>
-    <p>this is a popup should be apear when you do something</p>
-    <button class="close">close</button>
-  </div>
-</div>
-<!-- end popup -->
 
 <%= content_for :after_js do %>
   <%= javascript_tag do %>
